@@ -6,6 +6,16 @@ body {
     font-size: 15px;
 }
 
+.dark-mode {
+    background-color: rgb(18, 18, 31);
+    color: white;
+    transition: all .5;
+}
+
+.dark-mode-sidebar {
+    color: white;
+}
+
 .sidebar {
     padding: 20px;
     border-right: 2px;
@@ -16,6 +26,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;  
+    margin-left: -125px;
+    user-select: none;
 }
 
 .sidebar li {
@@ -32,6 +44,7 @@ body {
     text-decoration: none;
     transition: all .2s;
     padding: 5.5px;
+    user-select: none;
 }
 
 .sidebar a:hover {
@@ -47,10 +60,12 @@ body {
 }
 
 .content {
-    margin-left: 200px;
+    margin-left: 75px;
+    margin-right: 10px;
     padding: 20px;
-    overflow: auto;
+    overflow-x: auto;
     font-size: 15px;
+    text-wrap: stable;
 }
 
 .title {
@@ -58,3 +73,56 @@ body {
     font-weight: bold;
 }
 
+.unfinished {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color:rgb(20, 74, 129)
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/*This is an animation for the sidebar*/
+
+@keyframes closesidebar-sidebar {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -125px;
+    }
+}
+
+@keyframes opensidebar-sidebar {
+    0% {
+        margin-left: -125px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+/*This is an animation for the content*/
+
+@keyframes closesidebar-content {
+    0% {
+        margin-left: 200px;
+    }
+    100% {
+        margin-left: 75px;
+    }
+}
+
+@keyframes opensidebar-content {
+    0% {
+        margin-left: 75px;
+    }
+    100% {
+        margin-left: 200px;
+    }
+}
