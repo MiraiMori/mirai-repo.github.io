@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7a8114958c.js" crossorigin="anonymous"></script>
+    <script src="musicplayer.js"></script>
+    <link rel="stylesheet" href="musicplayer-beta.css">
+    <title>Music - Repositories</title>
+    <style>
+        .music-icon {
+            text-align: right;
+        }
+
+        .music-bill {
+            width: 30px;
+            vertical-align: top;
+        }
+
+        .music-name {
+            width: 30rem;
+        }
+
+        #album-name {
+            font-size: 10px;
+        }
+
+        .musiclist-divide {
+            border: 2px solid rgb(192, 192, 192);
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .music-content table {
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="../musicplayer/info.html" style="padding: 10px; background-color: rgb(230, 230, 230);" title="Back"><i class="fa-solid fa-left-long"></i> &nbspReturn</a>
+        <br>
+        <div class="title" style="text-decoration: underline;"><p>Music Player</p></div>
+        <li><a href="musicplayer-beta.html" class="active"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>&nbsp&nbspAll</a></li>
+        <li><a href="mp-playlist-beta.html">Playlist</a></li>
+        <li><a href="mp-khseries-beta.html">Kyoran Series</a></li>
+        <li><a href="mp-otherarr-beta.html">Other Arranges</a></li>
+        <li><a style="bottom: 70px; position: absolute; cursor: pointer;" onclick="about();"><i class="fa-solid fa-circle-info"></i>&nbsp About</a></li>
+    </div>
+
+    <div class="content">
+        <p class="title">All Songs</p>
+        <div class="music-content">
+            <table style="width:100%;">
+                <tr style="cursor: pointer;">
+                    <td class="music-bill">1.</td>
+                    <td class="music-name">The Monetary Hall <br><span id="album-name">From: <b>Kaihou 1 ~ Jiryoku / Main Menu's Theme</b></span></td>
+                    <td class="music-icon">0:00 &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-play"></i></td>
+                </tr>
+            </table>
+            <div class="musiclist-divide"></div>
+            <table style="width:100%;">
+                <tr style="cursor: pointer;">
+                    <td class="music-bill">2.</td>
+                    <td class="music-name">The Dreams of Hourai <br><span id="album-name">From: <b>Kaihou 1 ~ Jiryoku / Stage 1 Theme</b></span></td>
+                    <td class="music-icon">0:00 &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-play"></i></td>
+                </tr>
+            </table>
+            <div class="musiclist-divide"></div>
+            <table style="width:100%;">
+                <tr style="cursor: pointer; user-select: none;">
+                    <td class="music-bill">3.</td>
+                    <td class="music-name">Eastern Flower<br><span id="album-name">From: <b>Kaihou 1 ~ Jiryoku / Nara's Theme</b></span></td>
+                    <td class="music-icon">0:00 &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-play"></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.button-dir {
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(227, 227, 227);
+    padding: 7px;
+    margin: 2px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button-dir:hover {
+    background-color: rgb(203, 203, 203);
+    transition: all .5s;
+}

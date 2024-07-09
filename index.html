@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
     <script src="main.js"></script>
+    <script src="topic.js"></script>
     <title>Index - Repositories</title>
 </head>
 <body>
@@ -16,10 +17,12 @@
         <li><a href="index.html" class="active"><i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>&nbsp&nbspIndex</a></li>
         <li><a onclick="dropdowncontent();" style="cursor: pointer;">Project &nbsp<span id="dropdown-arrow"><i class="fa-solid fa-caret-down fa-sm"></i></span></a></li>
         <div style="display: none;" id="dropdown-content">
+            <a href="?" onclick="content_changer('help')" style="font-weight: normal; margin-left: 20px;">NanaChan AI</a>
             <a href="#" style="font-weight: normal; margin-left: 20px;">Game</a>
             <a href="#" style="font-weight: normal; margin-left: 20px;">Artworks</a>
             <a href="musicplayer/info.html" style="font-weight: normal; margin-left: 20px;">Music & Arrange</a>
             <a href="#" style="font-weight: normal; margin-left: 20px;">Story</a>
+            <a href="#" style="font-weight: normal; margin-left: 20px;">Codebases</a>
         </div>
         <li><a href="repo.html">Repository</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -28,12 +31,51 @@
 
     <div class="content" id="content">
         <div class="title"><p>Welcome to Mirai's Repositories!</p></div>
-        <p>This is the place where I will be put my created project.</p>
+        <p>This is the place where I put my newly created project.</p>
+        <div class="title">News!</div>
+        <br>
+        <div class="faq">
+            <p><i class="fa-solid fa-circle-info"></i>&nbsp <b>13/6/2024 - Thursday</b></p>
+            <div class="btn-news" style="padding-bottom: 10px;">
+                <style>
+                .btn-news button {
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                </style>
+                <button><i class="fa-solid fa-caret-left"></i></button>
+                <button><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div> 
+        <br>
+        <div class="title">FAQ</div>
+        <br>
         <div class="faq">
             <p><u>FAQ</u></p>
+            <div style="font-size: medium; text-decoration: underline;">About This Site</div>
             <p style="font-size: 15px;"><b>1. What is "Mirai Repositories"?</b><br>
-            - This is the place were I will be put my created project.</p>
-        </div>
+                - This is the place were I will be put my created project. The only things that I will post much on here I think is Kaihou Project and my music stuff.</p>
+            
+            <div style="font-size: medium; text-decoration: underline;">About NanaChan AI</div>
+            <p style="font-size: 15px;"><b>What is this exactly?</b><br>
+                - Basically, it's an AI where we can talk with them like a human. But most AI can do much of that nowadays.</p>
+            <p style="font-size: 15px;"><b>What inspired you to make this?</b><br>
+                - Neuro-Sama.</p>
+            <p style="font-size: 15px;"><b>Why is it called NanaChan AI?</b><br>
+                - That's was suppose to be an imaginary name tbh, I used it for my pet cat in Minecraft. I have no other
+                use for it so.... (lol).</p>
+            <p style="font-size: 15px;"><b>What leads you to make this?</b><br>
+                - I planned just to make it as a talking buddy while I'm coding my game to be honest.</p>
+
+            <div style="font-size: medium; text-decoration: underline;">About Kyouran Wars!</div>
+            <p style="font-size: 15px;"><b>2. What is Kaihou Project?  Is it same like Touhou Project?</b><br>
+                - Yes, you could say that to be honest Kyouran Wars!. Even the game will be similar in concept with another story and setting. <br>
+                I made this project just for fun though. If you interested, I'd recommend you look at <a href="https://miraimorikawa.github.io/khproject/">kyoran wars!</a> website if you have time. ^^"</p>
+            <p style="font-size: 15px;"><b>3. Do you made music for the game?</b><br>
+                - Yes, I do make music as well. There's whole article I made about it, I'd recommend you check it out if you have time again! ^^</p>
+        </div> 
     </div>
 </body>
 </html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.player {
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    padding-left: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.song-name {
+    font-weight: bold;
+}
+
+.sidebar {
+    padding: 20px;
+    border-right: 2px;
+    border-right-color: #aeaeae;
+    border-right-style: solid;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;  
+    margin-left: 0px;
+    user-select: none;
+}
+
+.sidebar li{
+    list-style: none;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.sidebar a {
+    font-size: 15px;
+    padding-right: 10px;
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+    padding: 5.5px;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.sidebar a.active {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    transition: all .2s;
+}
+
+.sidebar a:hover {
+    background-color: #aeaeae;
+    transition: all .2s;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5.5px;
+}
+
+.content {
+    margin-left: 200px;
+    margin-right: 10px;
+    padding: 0px;
+    overflow-x: auto;
+    font-size: 15px;
+    text-wrap: stable;
+}
+
+.music-content {
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 500px;
+}
+
+.music-content a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    height: max-content;
+}
+
+.music-title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.music-title a div {
+    font-weight: bold;
+}
+
+.music-controller {
+    border: 1px solid;
+    height: 40px;
+}
